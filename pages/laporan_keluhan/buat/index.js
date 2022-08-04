@@ -255,7 +255,7 @@ export default function Buat() {
                                       display: "none",
                                     },
                                   }}
-                                  placeholder="Oliver Jackson"
+                                  placeholder="Syams Syair Ramadhan"
                                   variant="outlined"
                                   style={{
                                     margin: "10px 0px 10px 0",
@@ -318,7 +318,7 @@ export default function Buat() {
                                     },
                                   }}
                                   size="small"
-                                  placeholder="23"
+                                  placeholder="22"
                                   variant="outlined"
                                   style={{
                                     margin: "10px 0px 10px 0",
