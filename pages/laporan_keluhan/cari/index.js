@@ -1,5 +1,4 @@
-import react, { useState } from "react";
-import Router from "next/router";
+import react, { useState } from "react";import Router from "next/router";
 import Navbars from "../../../components/Navbars";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Hero from "../../../components/Hero";
@@ -42,7 +41,6 @@ export default function CariLaporanKeluhanIndex() {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log(noHp);
     Router.push(`cari/${noHp}`);
   };
 
@@ -59,10 +57,10 @@ export default function CariLaporanKeluhanIndex() {
           <div className="row" style={{ margin: "0 auto" }}>
             <div className="col-lg-12">
               <form onSubmit={submitHandler}>
-                <div class="input-group">
+                <div className="input-group">
                   <input
                     type="text"
-                    class="form-control"
+                    className="form-control"
                     placeholder="Nomor Handphone"
                     onChange={(e) => {
                       setNoHp(e.target.value);

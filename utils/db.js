@@ -4,7 +4,7 @@ import mongoose from "mongoose";const db = async () =>
     .connect(
       "mongodb+srv://samrmdhn:yHV7hmVE666@cluster0.oyqc66i.mongodb.net/test"
     )
-    .then(() => console.log(`DB CONNECTED BITCHH`))
+    .then(() => console.log(`DB CONNECTED`))
     .catch((err) => console.log(err));
 /*
     mongoose.connect(

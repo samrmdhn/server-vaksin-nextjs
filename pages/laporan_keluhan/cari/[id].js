@@ -34,7 +34,6 @@ export default function CariKeluhan() {
 
   const getData = async () => {
     const res = await axios.get(`/api/pelapor/${id}`);
-    console.log(`ini res`, res);
     if (res.data.data == null) setNotificationError(true);
     setData(res.data.data);
   };

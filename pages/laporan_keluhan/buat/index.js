@@ -91,7 +91,6 @@ export default function Buat() {
   const [errorSelect, setErrorSelect] = useState(false);
   const [errorSelect2, setErrorSelect2] = useState(false);
   const [data, setData] = useState(false);
-  console.log(data);
 
   const getCategory = async () => {
     const res = await fetch("/api/category");
@@ -116,9 +115,7 @@ export default function Buat() {
   const handleSubmit = async (values) => {
     const res = await axios
       .post("/api/pelapor/add", values)
-      .then(function (response) {
-        console.log(response.data.data);
-      });
+      .then(function (response) {});
     setOpen(true);
   };
 
