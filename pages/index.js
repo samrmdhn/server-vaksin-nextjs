@@ -53,7 +53,6 @@ export default function Home() {
 
   setDatas(res.data.data.category);
   setDataPelapor(res.data.data.pelapor);
-  console.log(res)
   };
 
   useEffect(() => {
@@ -62,7 +61,7 @@ export default function Home() {
 
  const [datas, setDatas] = useState([]);
  const [dataPelapor, setDataPelapor] = useState([])
- // console.log(datas.length);
+ 
 
   const [currentInformation, setCurrentInformation] = useState(
     INFORMASI_VAKSIN[0].text
