@@ -48,6 +48,11 @@ export default function CariKeluhan() {
     });
   };
 
+  const replaceLine = (respon) =>{
+    const newText = respon?.split('<br/>').map(str => <p>{str}</p>);
+    return newText;
+  }
+
   return (
     <>
       <Navbars />
@@ -174,7 +179,7 @@ export default function CariKeluhan() {
                             Respon Terkait Keluhan
                           </div>
                           <div className="container rounded text-light mt-2 p-4" style={{minHeight: "30vh", backgroundColor: "#102865"}}>
-                          {data.respon}
+                          {replaceLine(data?.respon)}
 
                           </div>
                         </>
